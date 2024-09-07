@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h2><i>Static Resume Builder</i>   <b>build by Zainab Manzoor</b></h2>
+    <form id="Resume Input Form">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label for="Full Name">Full Name: </label>
+            <input type="text" id="Full Name" class="type" required>
+            <br><hr>
+            <label for="Your Email">Your Email: </label>
+            <input type="text" id="Your Email" class="type" required>
+            <br><hr>
+            <label for="Phone #">Phone #: </label>
+            <input type="text" id="Phone #" class="type" required>
+            <br><hr>
+            <label for="image">Image: </label>
+            <input type="file" id="image" accept="image/*" onchange="loadFile(event)">
+            <br><hr>
+            <img src="" alt="Profile Picture" id="profile-image">
+            
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Education</b></legend>
+
+            <label for="Matriculation">Matriculation: </label>
+            <input type="text" id="Matriculation" class="type" required>
+            <label for="School/Institute">School/Institute: </label>
+            <input type="text" id="School/Institute" class="type" required>
+            <br><hr>
+            <label for="intermediate">intermediate: </label>
+            <input type="text" id="intermediate" class="type" required>
+            <label for="Collage">Collage: </label>
+            <input type="text" id="Collage" class="type" required>
+            <br><hr>
+            <label for="Bachelor">Bachelor: </label>
+            <input type="text" id="Bachelor" class="type" required>
+            <label for="Collage/University">Collage/University: </label>
+            <input type="text" id="collage/University" class="type" required>
+            <br><hr>
+            <label for="Masters">Masters: </label>
+            <input type="text" id="Masters" class="type" required>
+            <label for="Collage/University">Collage/University: </label>
+            <input type="text" id="collage/University" class="type" required>
+            <br><hr>
+            <label for="Other">Other: </label>
+            <input type="text" id="Other" class="type" required>
+            <label for="Collage/University/Institute">Collage/University/Institute: </label>
+            <input type="text" id="Collage/University/Institute" class="type" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Skills</b></legend>
+            <div class="Skills-Input">
+            <label for="Skills-container">Skills: </label>
+            <input type="text" id="Skills-container" class="type" required>
+            </div>
+            <hr>
+            <button type="button" onclick="addSkills()">Add Skills</button>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Work Experience </b></legend>
+            <div class="Work Experience-Input">
+                <label for="Experience-container">Experience: </label>
+                <input type="text" id="Experience-container" class="type" required>
+                </div>
+                <hr>
+                <button type="button" onclick="addExperience()">Add Work-Experience</button>
+        </fieldset>
+        <button type="button" onclick="GenerateResume()"><em>Generate Resume</em></button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

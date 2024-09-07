@@ -1,0 +1,53 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 22px;
+    padding: 0;
+    background-color: rgb(218, 215, 211);
+}
+
+h2{
+   text-align: center; 
+   color: rgb(101, 101, 104);
+}
+
+form{
+  max-width: 700px;  
+  margin: auto;
+  background-color: rgb(193, 186, 186);
+  
+}
+
+fieldset{
+    border-color:  rgb(49, 52, 81);
+    border-radius: 1rem;
+    padding: 20px;
+    background-color: rgb(226, 226, 225);
+
+}
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(60, 60, 97);
+
+}
+
+label{
+    display:inline-block;
+    font-weight: 300;
+    color: rgb(66, 41, 89);
+}
+input,text{
+    width: calc(100% - 1px);
+    border-radius: 5px;
+    height: 18px;
+}
+
+button{
+    display:left;
+    background-color: rgb(209, 200, 219);
+    padding-top: 2px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(231, 211, 211);
+}
